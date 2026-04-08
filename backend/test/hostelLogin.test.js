@@ -8,7 +8,7 @@ describe('Hostel Login API', () => {
             .post('/api/hostel/login')
             .send({});
         expect(res.status).toBe(200);
-        expect(res.body).toHaveProperty('error');
+        expect(res.body).toHaveProperty('msg');
     });
 
     it('WB-HL02: wrong hostel_id returns error', async () => {
